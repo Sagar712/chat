@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <title>Websocket Demo</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="chats">
+            
+        </div>
+
+        <div class="typesec">
+            <input type="text" id="msg" placeholder="Type msg..">
+        
+            <button onclick="HandleMsg()"><i class="fas fa-caret-right"></i></button>
+        </div>
+        
+    </div>
+
+    <div class="user active">
+        <input type="text" id="userName" placeholder="Enter Username">
+        <button onclick="AddUser()">Join Chat</button>
+    </div>
+    <div class="overlay active"></div>
+
+    <div class="parentoverlay active">
+        <div class="spinner"></div>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
